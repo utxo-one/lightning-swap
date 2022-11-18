@@ -1,0 +1,16 @@
+[package]
+name = "lightning-swap"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = { version = "0.5.0-rc.1", features = ["tls", "json"] }
+rocket_contrib = "0.4.11"
+serde = { version = "1.0.130", features = ["derive"] }
+chrono = "0.4.19"
+diesel = { version = "2.0.0", features = ["postgres", "chrono"] }
+dotenvy = "0.15"
+hex-literal = "0.3.3"
+sha2 = "0.9.8"
